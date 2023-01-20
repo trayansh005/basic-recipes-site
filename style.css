@@ -38,6 +38,7 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .welcome-intro {
@@ -58,4 +59,68 @@ nav {
     margin-top: 2rem;
     font-size: 18px;
     padding: 7px 14px;
+    background: #80ff80;
+    border: none;
+}
+
+.recipes {
+    padding: 60px 0;
+    text-align: center;
+    background: #141414;
+}
+
+.recipes h2 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.recipes-card-container {
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipe-img {
+    width: 100%;
+    height: 245px;
+    display: block;
+}
+
+.recipes-content {
+    background: #43b839c0;
+    color: #fff;
+    padding: 15px;
+}
+
+.recipes-content h3 {
+    font-size: 24px;
+}
+
+.recipes-content p {
+    margin-top: 1rem;
+}
+
+.cooking-rating {
+    margin-top: 20px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.badge {
+    font-size: 14px;
+    padding: 4px;
+    background: #bedb39;
+    color: #070707;
+    font-weight: 600;
+}
+
+.rating img {
+    width: 24px;
+    height: 24px;
 }
