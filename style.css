@@ -1,126 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    font-family: 'Quicksand', sans-serif;
+	font-family: "Quicksand", sans-serif;
 }
 
 nav {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #070707;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #070707;
 }
 
 .menu-list {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    font-size: 18px;
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	font-size: 18px;
 }
 
 .menu-list a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .landing-page {
-    background: url(images/brooke-lark-jUPOXXRNdcA-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    color: white;
+	background: url(images/brooke-lark-jUPOXXRNdcA-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	color: white;
 }
 
 .welcome-intro {
-    padding: 7% 50px;
-    width: 650px;
+	padding: 7% 50px;
+	width: 650px;
 }
 
 .welcome-intro h1 {
-    font-size: 48px; 
-    margin-bottom: 1.5rem;
+	font-size: 48px;
+	margin-bottom: 1.5rem;
 }
 
 .welcome-intro p {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .browse-btn {
-    margin-top: 2rem;
-    font-size: 18px;
-    padding: 7px 14px;
-    background: #80ff80;
-    border: none;
+	margin-top: 2rem;
+	font-size: 18px;
+	padding: 7px 14px;
+	background: #80ff80;
+	border: none;
+	cursor: pointer;
+}
+
+.browse-btn:hover {
+	background: #75f175;
 }
 
 .recipes {
-    padding: 60px 0;
-    text-align: center;
-    background: #141414;
+	padding: 60px 0;
+	text-align: center;
+	background: #141414;
 }
 
 .recipes h2 {
-    font-size: 32px;
-    color: #fff;
+	font-size: 32px;
+	color: #fff;
 }
 
 .recipes-card-container {
-    padding: 0 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: space-between;
+	padding: 0 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	margin-top: 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.recipes-card {
+	position: relative;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
 }
 
 .recipe-img {
-    width: 100%;
-    height: 245px;
-    display: block;
+	width: 100%;
+	height: 245px;
+	display: block;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7); /* Black see-through */
+	width: 100%;
+	height: 245px;
+	transition: 0.3s ease;
+	opacity: 0;
+}
+
+.recipes-card:hover .overlay {
+	opacity: 1;
 }
 
 .recipes-content {
-    background: #43b839c0;
-    color: #fff;
-    padding: 15px;
+	background: #43b839c0;
+	color: #fff;
+	padding: 15px;
 }
 
 .recipes-content h3 {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .recipes-content p {
-    margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 .cooking-rating {
-    margin-top: 20px;
-    padding: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	margin-top: 20px;
+	padding: 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .badge {
-    font-size: 14px;
-    padding: 4px;
-    background: #bedb39;
-    color: #070707;
-    font-weight: 600;
+	font-size: 12px;
+	padding: 4px;
+	background: #bedb39;
+	color: #070707;
+	font-weight: 600;
+	letter-spacing: 0.8px;
 }
 
 .rating img {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
+}
+
+.recipe-btn {
+	cursor: pointer;
+	display: block;
+	margin-top: 25px;
+	padding: 7px 12px;
+	background: #bfffbf;
+	color: #141414;
+	border: none;
+	text-align: left !important;
+	margin-left: 5px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.recipe-btn:hover {
+	background: #008000;
+	color: #bfffbf;
+}
+
+.subscribe {
+	padding: 60px 100px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background: #2C1D17;
+}
+
+
+.subscribe img {
+    display: block;
+    height: 500px;
+}
+
+.subscribe-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #DAB898;
+}
+
+.subscribe-btn {
+    border: none;
+    font-size: 36px;
+    padding: 15px;
+    background: #2C1D17;
+    color: #d1caca;
+    border-radius: 5px;
 }
