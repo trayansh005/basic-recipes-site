@@ -3,3 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #070707;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.landing-page {
+    background: url(images/brooke-lark-jUPOXXRNdcA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-intro {
+    padding: 7% 50px;
+    width: 650px;
+}
+
+.welcome-intro h1 {
+    font-size: 48px; 
+    margin-bottom: 1.5rem;
+}
+
+.welcome-intro p {
+    font-size: 24px;
+}
+
+.browse-btn {
+    margin-top: 2rem;
+    font-size: 18px;
+    padding: 7px 14px;
+}
