@@ -174,31 +174,54 @@ nav {
 
 .subscribe {
 	padding: 60px 100px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    background: #2C1D17;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	background: #2c1d17;
 }
 
-
-.subscribe img {
-    display: block;
-    height: 500px;
+.subscribe-img {
+	display: block;
+	height: 500px;
 }
 
 .subscribe-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background: #DAB898;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	height: 100%;
+	background: #dab898;
+	padding: 0 60px;
+}
+
+.subscribe-right p {
+	font-size: 32px;
+	margin-bottom: 25px;
+}
+
+.subscribe-form {
+	display: flex;
+	align-items: center;
+}
+
+.subscribe-form input {
+	border: none;
+	outline: none;
+	padding: 15px;
+	background: #2c1d17;
+	color: #dab898;
+	flex: 1;
 }
 
 .subscribe-btn {
-    border: none;
-    font-size: 36px;
-    padding: 15px;
-    background: #2C1D17;
-    color: #d1caca;
-    border-radius: 5px;
+	height: 100%;
+	background: #9b4c2d;
+	cursor: pointer;
+}
+
+.subscribe-btn:hover {
+	background: #ef7646;
+	fill: #937961;
+	color: #070707;
 }
