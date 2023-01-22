@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Quicksand", sans-serif;
+}
+
+nav {
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #070707;
+}
+
+.menu-list {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+	font-size: 18px;
+}
+
+.menu-list a {
+	color: white;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+article {
+	padding: 5% 8%;
+	background: rgba(98, 51, 23, 0.867);
+	flex: 1;
+}
+
+article h1 {
+	font-size: 2rem;
+}
+
+small {
+	font-style: italic;
+}
+
+.pizza-img {
+	display: block;
+	width: 50%;
+	margin-top: 25px;
+}
+
+figcaption {
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.recipe-details-container {
+	width: 75%;
+	margin-top: 30px;
+}
+
+.recipe-details {
+	background: #4e4c16;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-between;
+	padding: 30px;
+	width: 75%;
+	margin-top: 50px;
+}
+
+.recipe-details-wrapper {
+	padding: 10px;
+}
+
+.recipe-details-label {
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.ingredients {
+	margin-top: 50px;
+}
+
+.ingredients h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.ingredients-list li {
+	margin-left: 15px;
+	padding: 10px 0;
+}
+
+.instructions {
+	margin-top: 20px;
+}
+
+.instructions h5 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+aside {
+	padding: 30px;
+	background: rgb(42, 42, 42);
+	flex-basis: 20%;
+}
